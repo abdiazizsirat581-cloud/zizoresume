@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Developer Zizo Web Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -10,6 +11,12 @@
                 background-color:white;
             }
             header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+            h1 {
                 background-color: #333;
                 color: #fff;
                 padding: 20px;
@@ -57,6 +64,82 @@
                 margin: 20px auto;
                 max-width: 100%;
             }
+          
+            li {
+                margin: 10px 0;
+            }
+            ol {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+                color: #333;
+                font-size: 1.1em;
+                font-weight: bold;
+
+            }
+            .contact-form {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+
+            }
+            .social-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                justify-content: center;
+                max-width: 900px;
+                margin: 30px auto 40px;
+            }
+            .social-links a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 155px;
+                min-height: 58px;
+                box-sizing: border-box;
+                padding: 14px 18px;
+                border: 1px solid #d5d9c3;
+                border-radius: 10px;
+                background: #f7f8ef;
+                color: #333;
+                box-shadow: 0 5px 12px rgba(51, 51, 51, 0.12);
+                transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+            }
+            .social-links a:hover,
+            .social-links a:focus-visible {
+                transform: translateY(-5px);
+                background: #fff;
+                box-shadow: 0 10px 20px rgba(51, 51, 51, 0.18);
+                outline: none;
+            }
+            .social-links i {
+                font-size: 1.5em;
+            }
+            .social-links span {
+                font-size: 0.95em;
+            }
+           .contact-form label{
+            
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+           }
+           .contact-form input,
+           .contact-form textarea {
+            width: 99%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+           }
+  
         </style>
     </head>
     <body>
@@ -67,15 +150,16 @@
         <nav>
             <ul>
                 
-                <li><a href="#projects.html">Projects</a></li>
-                <li><a href="#contact.html">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <img src="zizo.jpeg" alt="Developer Zizo">
         <hr><br>
         <section id="about">
-            <h2>About Me</h2>
+            <h1>About Me</h1>
             <p>Hello! I'm Abdiaziz Adan Sirat, also known as Developer Zizo. <br>
+                I study at <b>MOUNT KENYA UNIVERSITY</b> <br>
                 I am passionate about web development and love creating innovative 
                 solutions. <br>My expertise includes front-end development,
                 and I enjoy working on projects that challenge me to learn and grow.
@@ -89,6 +173,54 @@
             <h2>Below is an <b>AI Generated Video</b> of me</h2>
             <video src="ziv.mp4" controls>Introduction video</video>
         </section>
+        <hr><br>
+        <section id="projects">
+            <h1>Projects</h1>
+            <p>Here are some of my recent projects:</p>
+            <ol>
+                <li><a href="https://zizoportfolio.pages.dev/">Project 1 <u><b>(MAIN PORTFOLIO FOR DEVELOPER ZIZO)</b></u></a></li>
+                <p>This is a responsive portfolio website for Developer Zizo built with HTML, CSS, and JavaScript.</p>
+                <li><a href="index.html">Project 2 <u><b>(CURRENT WEBSITE/SECOND PORTFOLIO)</b></u ></a></li>
+                <p>This is currently the webpage that you are viewing, a project showcasing my web development skills.</p>
+            </ol>
+        </section>
+        <hr><br>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>If you would like to get in touch with me, please feel free to reach out via email or connect with me on social media:</p>
+            <div class="social-links">
+                <a href="https://wa.me/+254759441312" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span></a>
+                <a href="https://www.linkedin.com/in/abdiaziz-sirat-23b600433/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+                <a href="https://github.com/abdiazizsirat581-cloud" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                <a href="mailto:abdiazizsirat581@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+                <a href="https://www.instagram.com/abdiazizadansirat?igsi=MW5wbGI2YCN5NDN3dA==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                <a href="https://www.facebook.com/share/1BKzBhnWLa" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </div>
+            <h2>SEND MESSAGE DIRECTLY</h2>
+           <div class="contact-form">
+              <form id="contact-form" action="https://formspree.io/f/xbgjyjvr" method="POST">
+
+                <label for="name">Name:</label>
+               <input type="text" id="name" name="name" required>
+
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+
+               <label for="message">Message:</label>
+               <textarea id="message" name="message" required></textarea>
+
+               <input type="submit" id="submit-btn" value="Send Message">
+
+               <p id="form-status"></p>
+
+              </form>
+           </div>
+
+            <script src="script.js"></script>
+        </section>
+       <footer>
+        <p>&copy; 2026 Developer Zizo. All rights reserved.</p>
+       </footer>
 
     </body>
 </html>
