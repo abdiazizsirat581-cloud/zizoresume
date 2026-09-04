@@ -2,146 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">\\        <title>Developer Zizo Web Page</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Developer Zizo Web Page</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color:white;
-            }
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 20px;
-                text-align: center;
-            }
-            h1 {
-                background-color: #333;
-                color: #fff;
-                padding: 20px;
-                text-align: center;
-            }
-            nav ul {
-                list-style-type: none;
-                padding: 10px;
-                text-align: center;
-                background: #aab483;
-            }
-            nav ul li {
-                display: inline;
-                margin-right: 20px;
-            }
-            nav ul li a {
-                text-decoration: none;
-                color: #333;
-                font-size: 1.1em;
-                font-weight: bold;
-            }
-            h2 {
-                font-size: 1.2em;
-                text-align: center;
-            }
-            img {
-               width: 400px;
-               height: 500px;
-               max-width: 100%;
-               border-radius: 50%;
-               object-fit: cover;
-               object-position: center top;
-               display: block;
-               margin: 20px auto;
-            }
-            p {
-                font-size: 1.05em;
-                line-height: 1.5;
-                text-align: center;
-                margin: 20px auto;
-                max-width: 1000px;
-            }
-            video {
-                display: block;
-                margin: 20px auto;
-                max-width: 100%;
-            }
-          
-            li {
-                margin: 10px 0;
-            }
-            ol {
-                max-width: 600px;
-                margin: 0 auto;
-                padding: 0;
-            }
-            a {
-                text-decoration: none;
-                color: #333;
-                font-size: 1.1em;
-                font-weight: bold;
-
-            }
-            .contact-form {
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 20px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-
-            }
-            .social-links {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 16px;
-                justify-content: center;
-                max-width: 900px;
-                margin: 30px auto 40px;
-            }
-            .social-links a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                width: 155px;
-                min-height: 58px;
-                box-sizing: border-box;
-                padding: 14px 18px;
-                border: 1px solid #d5d9c3;
-                border-radius: 10px;
-                background: #f7f8ef;
-                color: #333;
-                box-shadow: 0 5px 12px rgba(51, 51, 51, 0.12);
-                transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-            }
-            .social-links a:hover,
-            .social-links a:focus-visible {
-                transform: translateY(-5px);
-                background: #fff;
-                box-shadow: 0 10px 20px rgba(51, 51, 51, 0.18);
-                outline: none;
-            }
-            .social-links i {
-                font-size: 1.5em;
-            }
-            .social-links span {
-                font-size: 0.95em;
-            }
-           .contact-form label{
-            
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-           }
-           .contact-form input,
-           .contact-form textarea {
-            width: 99%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-           }
-  
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -155,7 +19,17 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <img src="zizo.jpeg" alt="Developer Zizo">
+        <div class="profile-intro">
+            <img src="zizo.jpeg" alt="Developer Zizo">
+            <div>
+                <p class="intro-text">
+                    I am a full web developer with knowledge of HTML for creating clear and accessible page structures,
+                    CSS for designing responsive and attractive layouts, and JavaScript for building interactive web
+                    experiences. I also understand how front-end and back-end technologies work together, and I enjoy
+                    learning new tools while creating fast, user-friendly, and reliable websites.
+                </p>
+            </div>
+        </div>
         <hr><br>
         <section id="about">
             <h1>About Me</h1>
@@ -178,13 +52,36 @@
         <section id="projects">
             <h1>Projects</h1>
             <p>Here are some of my recent projects:</p>
-            <ol>
-                <li><a href="https://zizoportfolio.pages.dev/">Project 1 <u><b>(MAIN PORTFOLIO FOR DEVELOPER ZIZO)</b></u></a></li>
-                <p>This is a responsive portfolio website for Developer Zizo built with HTML, CSS, and JavaScript.</p>
-                <li><a href="index.html">Project 2 <u><b>(CURRENT WEBSITE/SECOND PORTFOLIO)</b></u ></a></li>
-                <p>This is currently the webpage that you are viewing, a project showcasing my web development skills.</p>
-            </ol>
+            
+                <div class="project-card">
+                    <div class="project-label">
+                        <h2><u>Project 1</u></h2>
+                        <b>(MAIN PORTFOLIO FOR DEVELOPER ZIZO)</b>
+                    </div>
+                    <p>This is a responsive portfolio website for Developer Zizo built with HTML, CSS, and JavaScript.</p>
+                    <p>To view the project, click the button below.</p>
+                    <button><a href="https://zizoportfolio.pages.dev/" target="_blank" rel="noopener noreferrer">View Project 1</a></button>
+                </div>
+                <div class="project-card">
+                    <div class="project-label">
+                        <h2><u>Project 2</u></h2>
+                        <b>(CURRENT WEBSITE/SECOND PORTFOLIO)</b>
+                    </div>
+                    <p>This is currently the webpage that you are viewing, a project showcasing my web development skills.</p>
+                    <p>To view the project, click the button below.</p>
+                    <button><a href="https://zizoresume.pages.dev/" target="_blank" rel="noopener noreferrer">View Project 2</a></button>
+                </div>
+                <div class="project-card">
+                    <div class="project-label">
+                        <h2><u>Project 3</u></h2>
+                        <b>(TERMUX LOCAL PHONE FILE SERVER)</b>
+                    </div>
+                    <p>This is a Termux local phone file server project built with Python, HTML, and CSS.</p>
+                    <p>To view the project, click the button below.</p>
+                    <button><a href="https://github.com/abdiazizsirat581-cloud/Termux-local-phone-file-server" target="_blank" rel="noopener noreferrer">View Project 3</a></button>
+                </div>
         </section>
+        
         <hr><br>
         <section id="contact">
             <h1>Contact</h1>
